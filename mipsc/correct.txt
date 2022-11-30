@@ -1,0 +1,5 @@
+0: 0x20080000 addi $8, $0, 0
+>>> $8 = 0
+1: 0x11000003 beq  $8, $0, 3
+>>> branch taken to PC = 4
+Illegal branch to non-instruction: PC = 4

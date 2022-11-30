@@ -1,0 +1,8 @@
+foo: foo.o bar.o
+	clang -o foo foo.o bar.o
+
+foo.o: foo.c bar.h
+	clang -c foo.c
+
+bar.o: bar.c bar.h
+	clang -c bar.c

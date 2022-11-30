@@ -1,0 +1,1 @@
+/web/cs1521/22T3/activities/gaussian_sum/files.ln/gaussian_sum.c

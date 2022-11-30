@@ -1,0 +1,14 @@
+all.c: bar.c foo.c bar_copy.c foo_copy.c
+	iconv bar.c foo.c bar_copy.c foo_copy.c -o all.c
+
+bar_copy.c: bar.c
+	cp bar.c bar_copy.c
+
+foo_copy.c: foo.c
+	cp foo.c foo_copy.c
+
+all_copy.c: all.c
+	cp all.c all_copy.c
+
+all.txt: all_copy.c bar.h
+	iconv all_copy.c bar.h -o all.txt
